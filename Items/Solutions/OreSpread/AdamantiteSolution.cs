@@ -52,7 +52,7 @@ namespace SolutionsMod.Items.Solutions.OreSpread
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<AdamantiteSolution>());
+            item.CloneDefaults(ModContent.ItemType<AdamantiteSolution>());
             item.consumable = false;
             item.maxStack = 1;
         }

@@ -1,6 +1,8 @@
-﻿using System;
+﻿using SolutionsMod.Dusts.LightedDust;
+using System;
 using Terraria;
 using Terraria.ID;
+using Terraria.ModLoader;
 
 namespace SolutionsMod.Projectiles.Solutions.OreSpread
 {
@@ -12,7 +14,7 @@ namespace SolutionsMod.Projectiles.Solutions.OreSpread
         {
             base.SetDefaults();
             maxTime = 64;
-            dustType = mod.DustType("MineralSolution");
+            dustType = ModContent.DustType<MineralDust>() ;
         }
 
         public override void Convert(int i, int j, int size = 4)

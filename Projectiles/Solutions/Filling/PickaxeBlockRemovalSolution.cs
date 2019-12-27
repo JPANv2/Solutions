@@ -18,7 +18,7 @@ namespace SolutionsMod.Projectiles.Solutions.Filling
            // projectile.name = "Removal Spray";
             maxTime = 133;
             //minDistance = 128;
-            dustType = mod.DustType<RockDust>();
+            dustType = ModContent.DustType<RockDust>();
         }
 
         public override void Convert(int i, int j, int size = 4)

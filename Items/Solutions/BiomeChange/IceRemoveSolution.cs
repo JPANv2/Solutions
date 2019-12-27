@@ -47,7 +47,7 @@ namespace SolutionsMod.Items.Solutions.BiomeChange
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<IceRemoveSolution>());
+            item.CloneDefaults(ModContent.ItemType<IceRemoveSolution>());
             item.consumable = false;
             item.maxStack = 1;
         }

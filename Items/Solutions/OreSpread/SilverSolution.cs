@@ -53,7 +53,7 @@ namespace SolutionsMod.Items.Solutions.OreSpread
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<SilverSolution>());
+            item.CloneDefaults(ModContent.ItemType<SilverSolution>());
             item.consumable = false;
             item.maxStack = 1;
         }

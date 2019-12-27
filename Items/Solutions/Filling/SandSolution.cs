@@ -47,7 +47,7 @@ namespace SolutionsMod.Items.Solutions.Filling
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<SandSolution>());
+            item.CloneDefaults(ModContent.ItemType<SandSolution>());
             item.consumable = false;
             item.maxStack = 1;
         }

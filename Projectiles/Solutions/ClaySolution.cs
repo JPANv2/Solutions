@@ -2,7 +2,7 @@
 using SolutionsMod.Dusts.LightedDust;
 using Terraria;
 using Terraria.ID;
-
+using Terraria.ModLoader;
 
 namespace SolutionsMod.Projectiles.Solutions
 {
@@ -12,7 +12,7 @@ namespace SolutionsMod.Projectiles.Solutions
         {
             base.SetDefaults();
             //projectile.name = "Clay Spray";
-            dustType = mod.DustType<ClayDust>();
+            dustType = ModContent.DustType<ClayDust>();
         }
 
         public override void Convert(int i, int j, int size = 4)

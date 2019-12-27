@@ -20,24 +20,24 @@ namespace SolutionsMod.Projectiles
         {
             Mod mod = ModLoader.GetMod("SolutionsMod");
             dustToLightless = new Dictionary<int, int>();
-            dustToLightless.Add(110, mod.DustType<BaseLightlessDust>());
-            dustToLightless.Add(111, mod.DustType<LightlessBlueDust>());
-            dustToLightless.Add(112, mod.DustType<LightlessPurpleDust>());
-            dustToLightless.Add(113, mod.DustType<LightlessDeepBlueDust>());
-            dustToLightless.Add(114, mod.DustType<LightlessRedDust>());
+            dustToLightless.Add(110, ModContent.DustType<BaseLightlessDust>());
+            dustToLightless.Add(111, ModContent.DustType<LightlessBlueDust>());
+            dustToLightless.Add(112, ModContent.DustType<LightlessPurpleDust>());
+            dustToLightless.Add(113, ModContent.DustType<LightlessDeepBlueDust>());
+            dustToLightless.Add(114, ModContent.DustType<LightlessRedDust>());
 
-            dustToLightless.Add(mod.DustType<ClayDust>(), mod.DustType<LightlessClayDust>());
-            dustToLightless.Add(mod.DustType<DirtDust>(), mod.DustType<LightlessDirtDust>());
-            dustToLightless.Add(mod.DustType<GraniteDust>(), mod.DustType<LightlessGraniteDust>());
-            dustToLightless.Add(mod.DustType<HoneyDust>(), mod.DustType<LightlessHoneyDust>());
-            dustToLightless.Add(mod.DustType<IceRemoveDust>(), mod.DustType<LightlessIceRemoveDust>());
-            dustToLightless.Add(mod.DustType<IceSpreadDust>(), mod.DustType<LightlessIceSpreadDust>());
-            dustToLightless.Add(mod.DustType<JungleDust>(), mod.DustType<LightlessJungleDust>());
-            dustToLightless.Add(mod.DustType<LavaDust>(), mod.DustType<LightlessLavaDust>());
-            dustToLightless.Add(mod.DustType<MarbleDust>(), mod.DustType<LightlessMarbleDust>());
-            dustToLightless.Add(mod.DustType<MineralDust>(), mod.DustType<LightlessMineralDust>());
-            dustToLightless.Add(mod.DustType<RockDust>(), mod.DustType<LightlessRockDust>());
-            dustToLightless.Add(mod.DustType<WaterDust>(), mod.DustType<LightlessWaterDust>());
+            dustToLightless.Add(ModContent.DustType<ClayDust>(), ModContent.DustType<LightlessClayDust>());
+            dustToLightless.Add(ModContent.DustType<DirtDust>(), ModContent.DustType<LightlessDirtDust>());
+            dustToLightless.Add(ModContent.DustType<GraniteDust>(), ModContent.DustType<LightlessGraniteDust>());
+            dustToLightless.Add(ModContent.DustType<HoneyDust>(), ModContent.DustType<LightlessHoneyDust>());
+            dustToLightless.Add(ModContent.DustType<IceRemoveDust>(), ModContent.DustType<LightlessIceRemoveDust>());
+            dustToLightless.Add(ModContent.DustType<IceSpreadDust>(), ModContent.DustType<LightlessIceSpreadDust>());
+            dustToLightless.Add(ModContent.DustType<JungleDust>(), ModContent.DustType<LightlessJungleDust>());
+            dustToLightless.Add(ModContent.DustType<LavaDust>(), ModContent.DustType<LightlessLavaDust>());
+            dustToLightless.Add(ModContent.DustType<MarbleDust>(), ModContent.DustType<LightlessMarbleDust>());
+            dustToLightless.Add(ModContent.DustType<MineralDust>(), ModContent.DustType<LightlessMineralDust>());
+            dustToLightless.Add(ModContent.DustType<RockDust>(), ModContent.DustType<LightlessRockDust>());
+            dustToLightless.Add(ModContent.DustType<WaterDust>(), ModContent.DustType<LightlessWaterDust>());
 
         }
 
@@ -48,7 +48,7 @@ namespace SolutionsMod.Projectiles
                 BaseSolution bs = projectile.modProjectile as BaseSolution;
                 if (bs.toChange)
                 {
-                    SolutionsPlayer p = Main.player[projectile.owner].GetModPlayer<SolutionsPlayer>(mod);
+                    SolutionsPlayer p = Main.player[projectile.owner].GetModPlayer<SolutionsPlayer>();
                     if (p.solTimesFour)
                     {
                         bs.maxTime *= 4;

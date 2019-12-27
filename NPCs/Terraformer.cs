@@ -1,3 +1,4 @@
+using SolutionsMod.Dusts.LightedDust;
 using SolutionsMod.Items.Solutions;
 using SolutionsMod.Items.Solutions.Filling;
 using Terraria;
@@ -44,7 +45,7 @@ namespace SolutionsMod.NPCs
 			int num = npc.life > 0 ? 1 : 5;
 			for (int k = 0; k < num; k++)
 			{
-				Dust.NewDust(npc.position, npc.width, npc.height, mod.DustType("RockSolution"));
+				Dust.NewDust(npc.position, npc.width, npc.height, ModContent.DustType<RockDust>());
 			}
 		}
 
@@ -213,7 +214,7 @@ namespace SolutionsMod.NPCs
 				nextSlot++;
 				shop.item[nextSlot].SetDefaults(mod.ItemType("HoneySolution"));
 				nextSlot++;
-                shop.item[nextSlot].SetDefaults(mod.ItemType<PickaxePoweredSolution>());
+                shop.item[nextSlot].SetDefaults(ModContent.ItemType<PickaxePoweredSolution>());
                 nextSlot++;
             }
 			if(NPC.downedPlantBoss){
@@ -224,7 +225,7 @@ namespace SolutionsMod.NPCs
             {
                 shop.item[nextSlot].SetDefaults(mod.ItemType("WireRemovalSolution"));
                 nextSlot++;
-                shop.item[nextSlot].SetDefaults(mod.ItemType<ActuatingSolution>());
+                shop.item[nextSlot].SetDefaults(ModContent.ItemType<ActuatingSolution>());
                 nextSlot++;
             }
         }

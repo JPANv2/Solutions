@@ -24,7 +24,7 @@ namespace SolutionsMod.Items.Accessories
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            SolutionsPlayer p = player.GetModPlayer<SolutionsPlayer>(mod);
+            SolutionsPlayer p = player.GetModPlayer<SolutionsPlayer>();
             p.solRadiusHalf = true;
         }
     }

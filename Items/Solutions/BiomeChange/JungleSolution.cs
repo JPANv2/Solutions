@@ -47,7 +47,7 @@ namespace SolutionsMod.Items.Solutions.BiomeChange
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<JungleSolution>());            
+            item.CloneDefaults(ModContent.ItemType<JungleSolution>());            
             item.consumable = false;
         }
 

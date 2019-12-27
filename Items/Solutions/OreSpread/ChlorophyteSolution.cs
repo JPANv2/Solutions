@@ -54,7 +54,7 @@ namespace SolutionsMod.Items.Solutions.OreSpread
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<ChlorophyteSolution>());
+            item.CloneDefaults(ModContent.ItemType<ChlorophyteSolution>());
             item.consumable = false;
             item.maxStack = 1;
         }

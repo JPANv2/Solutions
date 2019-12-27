@@ -47,7 +47,7 @@ namespace SolutionsMod.Items.Solutions.BiomeChange
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<RockNormalizerSolution>());
+            item.CloneDefaults(ModContent.ItemType<RockNormalizerSolution>());
             item.consumable = false;           
         }
 

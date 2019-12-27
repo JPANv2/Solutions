@@ -54,7 +54,7 @@ namespace SolutionsMod.Items.Solutions.OreSpread
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<RubySolution>());
+            item.CloneDefaults(ModContent.ItemType<RubySolution>());
             item.consumable = false;
             item.maxStack = 1;
         }

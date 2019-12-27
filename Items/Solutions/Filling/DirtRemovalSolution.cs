@@ -51,7 +51,7 @@ namespace SolutionsMod.Items.Solutions.Filling
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<DirtRemovalSolution>());
+            item.CloneDefaults(ModContent.ItemType<DirtRemovalSolution>());
             item.consumable = false;
             item.maxStack = 1;
         }

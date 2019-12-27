@@ -46,7 +46,7 @@ namespace SolutionsMod.Projectiles.Solutions
 
         public override void AI()
 		{
-            //int dustType = mod.DustType("DirtSolution");
+            //int dustType = ModContent.DustType("DirtSolution");
             if (minDistance >= 0)
             {
                 if (projectile.owner == Main.myPlayer)

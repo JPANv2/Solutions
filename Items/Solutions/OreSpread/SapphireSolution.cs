@@ -54,7 +54,7 @@ namespace SolutionsMod.Items.Solutions.OreSpread
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<SapphireSolution>());
+            item.CloneDefaults(ModContent.ItemType<SapphireSolution>());
             item.consumable = false;
             item.maxStack = 1;
         }

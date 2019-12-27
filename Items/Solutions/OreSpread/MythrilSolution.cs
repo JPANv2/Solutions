@@ -53,7 +53,7 @@ namespace SolutionsMod.Items.Solutions.OreSpread
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<MythrilSolution>());
+            item.CloneDefaults(ModContent.ItemType<MythrilSolution>());
             item.consumable = false;
             item.maxStack = 1;
         }

@@ -55,7 +55,7 @@ namespace SolutionsMod.Items.Solutions.OreSpread
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<OrichalcumSolution>());
+            item.CloneDefaults(ModContent.ItemType<OrichalcumSolution>());
             item.consumable = false;
             item.maxStack = 1;
         }

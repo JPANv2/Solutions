@@ -54,7 +54,7 @@ namespace SolutionsMod.Items.Solutions.OreSpread
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<EmeraldSolution>());
+            item.CloneDefaults(ModContent.ItemType<EmeraldSolution>());
             item.consumable = false;
             item.maxStack = 1;
         }

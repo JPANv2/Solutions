@@ -15,7 +15,7 @@ namespace SolutionsMod.Projectiles.Solutions.Filling
             base.SetDefaults();
             //projectile.name = "Honey Spray";
             projectile.ignoreWater = true;
-            dustType = mod.DustType<HoneyDust>();
+            dustType = ModContent.DustType<HoneyDust>();
             maxTime = 64;
         }
 

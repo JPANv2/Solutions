@@ -1,6 +1,7 @@
 ﻿using System;
 using SolutionsMod.Dusts.LightedDust;
 using Terraria;
+using Terraria.ModLoader;
 
 namespace SolutionsMod.Projectiles.Solutions.BiomeChange
 {
@@ -11,7 +12,7 @@ namespace SolutionsMod.Projectiles.Solutions.BiomeChange
             base.SetDefaults();
            // projectile.name = "Ice Spray";
             maxTime = 134;
-            dustType = mod.DustType<IceSpreadDust>();
+            dustType = ModContent.DustType<IceSpreadDust>();
         }
 
         public override void Convert(int i, int j, int size = 4)

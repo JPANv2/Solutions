@@ -53,7 +53,7 @@ namespace SolutionsMod.Items.Solutions.OreSpread
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<IronSolution>());
+            item.CloneDefaults(ModContent.ItemType<IronSolution>());
             item.consumable = false;
             item.maxStack = 1;
         }

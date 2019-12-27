@@ -54,7 +54,7 @@ namespace SolutionsMod.Items.Solutions.OreSpread
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<AmethystSolution>());
+            item.CloneDefaults(ModContent.ItemType<AmethystSolution>());
             item.consumable = false;
             item.maxStack = 1;
         }

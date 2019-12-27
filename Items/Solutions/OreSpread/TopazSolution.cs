@@ -54,7 +54,7 @@ namespace SolutionsMod.Items.Solutions.OreSpread
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<TopazSolution>());
+            item.CloneDefaults(ModContent.ItemType<TopazSolution>());
             item.consumable = false;
             item.maxStack = 1;
         }

@@ -45,7 +45,7 @@ namespace SolutionsMod.Items.Solutions
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<ActuatingSolution>());
+            item.CloneDefaults(ModContent.ItemType<ActuatingSolution>());
             item.consumable = false;
             item.maxStack = 1;
         }

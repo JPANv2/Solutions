@@ -15,7 +15,7 @@ namespace SolutionsMod.Projectiles.Solutions.Filling
             base.SetDefaults();
             //projectile.name = "Lava Spray";
             projectile.ignoreWater = true;
-            dustType = mod.DustType<LavaDust>();
+            dustType = ModContent.DustType<LavaDust>();
             maxTime = 64;
         }
 

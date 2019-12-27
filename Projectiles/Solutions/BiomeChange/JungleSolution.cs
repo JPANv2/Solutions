@@ -2,6 +2,7 @@
 using SolutionsMod.Dusts.LightedDust;
 using Terraria;
 using Terraria.ID;
+using Terraria.ModLoader;
 
 namespace SolutionsMod.Projectiles.Solutions.BiomeChange
 {
@@ -12,7 +13,7 @@ namespace SolutionsMod.Projectiles.Solutions.BiomeChange
             base.SetDefaults();
             //projectile.name = "Jungle Spray";
             maxTime = 134;
-            dustType = mod.DustType<JungleDust>();
+            dustType = ModContent.DustType<JungleDust>();
         }
 
         public override void Convert(int i, int j, int size = 4)

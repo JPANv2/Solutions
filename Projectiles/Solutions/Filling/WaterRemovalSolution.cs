@@ -15,7 +15,7 @@ namespace SolutionsMod.Projectiles.Solutions.Filling
             base.SetDefaults();
            // projectile.name = "Water Spray";
             projectile.ignoreWater = true;
-            dustType = mod.DustType<WaterDust>();
+            dustType = ModContent.DustType<WaterDust>();
             maxTime = 64;
         }
 

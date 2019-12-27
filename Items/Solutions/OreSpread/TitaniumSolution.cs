@@ -54,7 +54,7 @@ namespace SolutionsMod.Items.Solutions.OreSpread
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<TitaniumSolution>());
+            item.CloneDefaults(ModContent.ItemType<TitaniumSolution>());
             item.consumable = false;
             item.maxStack = 1;
         }

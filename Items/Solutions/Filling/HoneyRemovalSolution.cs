@@ -50,7 +50,7 @@ namespace SolutionsMod.Items.Solutions.Filling
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<HoneyRemovalSolution>());
+            item.CloneDefaults(ModContent.ItemType<HoneyRemovalSolution>());
             item.consumable = false;
             item.maxStack = 1;
         }

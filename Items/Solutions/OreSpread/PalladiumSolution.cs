@@ -53,7 +53,7 @@ namespace SolutionsMod.Items.Solutions.OreSpread
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<PalladiumSolution>());
+            item.CloneDefaults(ModContent.ItemType<PalladiumSolution>());
             item.consumable = false;
             item.maxStack = 1;
         }

@@ -1,5 +1,6 @@
 ﻿using SolutionsMod.Dusts.LightedDust;
 using Terraria.ID;
+using Terraria.ModLoader;
 
 namespace SolutionsMod.Projectiles.Solutions.Filling.Block
 {
@@ -23,7 +24,7 @@ namespace SolutionsMod.Projectiles.Solutions.Filling.Block
         public override void SetDefaults()
         {
             base.SetDefaults();
-            dustType = mod.DustType<HoneyDust>();
+            dustType = ModContent.DustType<HoneyDust>();
             blockSet = stoneBlocks;
             wallSet = stoneWalls;
         }

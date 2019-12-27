@@ -55,7 +55,7 @@ namespace SolutionsMod.Items.Solutions.OreSpread
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<CopperSolution>());
+            item.CloneDefaults(ModContent.ItemType<CopperSolution>());
             item.consumable = false;
             item.maxStack = 1;
         }

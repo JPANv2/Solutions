@@ -54,7 +54,7 @@ namespace SolutionsMod.Items.Solutions.OreSpread
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<PlatinumSolution>());
+            item.CloneDefaults(ModContent.ItemType<PlatinumSolution>());
             item.consumable = false;
             item.maxStack = 1;
         }

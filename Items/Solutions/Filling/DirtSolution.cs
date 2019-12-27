@@ -48,7 +48,7 @@ namespace SolutionsMod.Items.Solutions.Filling
 
         public override void SetDefaults()
         {
-            item.CloneDefaults(mod.ItemType<DirtSolution>());
+            item.CloneDefaults(ModContent.ItemType<DirtSolution>());
             item.consumable = false;
             item.maxStack = 1;
         }
